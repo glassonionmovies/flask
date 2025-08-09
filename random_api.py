@@ -1,7 +1,13 @@
+
+
+
+
 from flask import Flask, jsonify
+from flask_cors import CORS # Import the CORS library
 import random, os
 
 app = Flask(__name__)
+CORS(app) # This will enable CORS for all routes
 
 @app.route('/random', methods=['GET'])
 def get_random_number():
