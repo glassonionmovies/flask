@@ -15,7 +15,7 @@ def get_random_number():
 
 @app.route('/srand', methods=['GET'])
 def get_simple_random_number():
-    return str(random.randint(1, 100))
+    return str(random.randint(100, 900))
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
